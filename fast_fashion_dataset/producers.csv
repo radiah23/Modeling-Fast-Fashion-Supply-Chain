@@ -1,0 +1,9 @@
+iso3,country,exports_2024_usd_bn,world_share_2024_pct,factories,factories_note,garment_workers_million,wage_usd_month,wage_note,ituc_rating_2026,safety_score_0_10,epi_2026,env_regulation_E_0_10,carbon_intensity_gco2e_kwh,capacity_usd_bn
+CHN,China,165.24,29.64,13745,"garment enterprises above designated size (income >= 20m yuan), 2025",22.5,482,garment minimum wage (ILO),5,2,33.88,3.39,467.1,198.29
+BGD,Bangladesh,38.48,6.9,3320,"export-oriented RMG factories, Mapped in Bangladesh (current count)",5.0,102,"garment minimum wage Tk 12,500 (H&M Group data)",5,2,23.46,2.35,590.8,46.18
+VNM,Vietnam,33.94,6.09,13741,"textile and garment enterprises, 2019 (includes textile)",5.0,163,garment minimum wage (H&M Group data),4,4,23.82,2.38,450.8,40.73
+TUR,Turkey,17.91,3.21,,fill from Open Supply Hub,,655,"national net minimum wage 2026 (TRY 28,075)",5,2,34.32,3.43,329.7,21.49
+IND,India,16.36,2.94,,fill from Open Supply Hub,14.5,124,garment minimum wage (H&M Group data),5,2,22.46,2.25,584.0,19.63
+KHM,Cambodia,9.89,1.77,800,"garment factories, June 2022",0.75,208,garment minimum wage (H&M Group data),5,2,31.21,3.12,471.8,11.87
+PAK,Pakistan,9.28,1.66,,fill from Open Supply Hub,5.0,135,garment minimum wage (H&M Group data),5,2,29.03,2.9,345.7,11.14
+IDN,Indonesia,8.73,1.57,,fill from Open Supply Hub,4.0,172,garment minimum wage (H&M Group data),5,2,26.24,2.62,624.5,10.48

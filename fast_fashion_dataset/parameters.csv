@@ -1,0 +1,36 @@
+id,symbol,name,value,unit,status,used_in,source
+1,producers,Producer countries,"CHN,BGD,VNM,TUR,IND,KHM,PAK,IDN",,data,network,WTO 2024
+2,consumers,Consumer markets,"EU,USA,JPN,GBR,KOR",,data,network,WTO 2023
+3,w_ij,Edge weight producer->consumer,edges_estimated.csv,USD bn,estimated,network,BACI HS61+62 (replace estimate)
+4,F_i,Factories per country,producers.csv,count,data,network,MiB; NBS; ASEAN; Open Supply Hub
+5,W0_i,Starting monthly wage,producers.csv,USD/month,data,network,H&M Group; ILO; Turkey 2026 law
+6,S_i,Safety score = 2*(6 - ITUC rating),producers.csv,0-10,data,network,ITUC 2026
+7,p0,Baseline world price (normalized),1.0,index,chosen,econ,normalization
+8,lambda,Labour share in unit cost (c_i = lambda*W_i/W_max),0.5,,chosen,econ,"assumption, swept"
+9,epsilon,Demand price elasticity (B_j = eps*C_j/p0),0.5,,chosen,econ,"assumption, swept"
+10,spare,Spare capacity share (K_i = P_i*(1+spare)),0.2,,chosen,econ,"assumption, swept"
+11,f,Attack fraction: K_i -> (1-f)*P_i,0.16,,data,sim1,"529/3320 factories, Nov 2026 strike"
+12,f_sweep,Fractions tested,0:1:0.05,,chosen,sim1,"percolation curve, Week 4"
+13,random_failure,Control: same f in random countries,on,,chosen,sim1,Week 4
+14,x,Exit rate after a scandal,0.05,per month,chosen,sim1,exports +16% after Rana Plaza; Jacobs & Singhal 2017
+15,redistribution,How lost production is replaced,market equilibrium,,model,sim1,section 3 of README
+16,T_A,Brand A threshold,none,,data,sim2,Shein F
+17,T_B,Brand B threshold on S_i,4 (swept 0-10),0-10,data,sim2,H&M B+
+18,w_c,Compliance weight,0.04,,data,sim2,Distelhorst & Locke 2018
+19,s,Switching cost (max edge change per month),0.1,,chosen,sim2,Amengual & Distelhorst 2019
+20,share_A,Brand A share of demand,0.5 (swept 0-1),,chosen,sim2,experiment variable
+21,dt,Time step / run,1 month / 1995-2025 (360 steps),,chosen,sim3,BACI starts 1995
+22,dF,New factories per step,8,per month,data,sim3,128 new BGMEA members in 15 months
+23,attach,Attachment probability,F_i*(W_ref/W_i),,model,sim3,Barabasi-Albert + cost
+24,a,Wage growth from factory demand,fit,,fitted,sim3,bangladesh_wage_history.csv
+25,b,Wage pull back to W0,fit,,fitted,sim3,bangladesh_wage_history.csv
+26,review,Wage review interval,60,steps,data,sim3,Bangladesh reviews every 5 years (Cornell GLI)
+27,shock_W,Wage shock size,0 to 1.4,fraction,data,sim3,"Tk 12,500 -> Tk 30,000 demand"
+28,E_i,Environmental regulation = EPI/10,producers.csv,0-10,data,sim4,EPI 2026
+29,kappa,Regulation cost factor,0.5,,chosen,sim4,"no data, swept"
+30,e_i,Carbon intensity of electricity,producers.csv,gCO2e/kWh,data,sim4,lowcarbonpower.org; swap for OWID lifecycle
+31,ship_ef,Shipping emission factor,0.0769,kgCO2e/TEU-km,data,sim4,GLEC v3.0
+32,delta,Environmental recovery rate,0.1,per step,chosen,sim4,"no data, swept"
+33,P_c,Pollution tipping threshold,swept,,chosen,sim4,optional
+34,waste_share,Used-clothing exports that become waste,0.4,,chosen,sim4,optional; BACI HS6309
+35,seeds,Runs per experiment,10,,chosen,all,averaging

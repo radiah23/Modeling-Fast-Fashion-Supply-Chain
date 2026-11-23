@@ -1,0 +1,14 @@
+node_type,iso3,unit_cost_c_i,supply_slope_s_i,demand_A_j,demand_B_j,capacity_K_i
+producer,CHN,0.3679,261.414,,,198.29
+producer,BGD,0.0779,41.731,,,46.18
+producer,VNM,0.1244,38.762,,,40.73
+producer,TUR,0.5,35.82,,,21.49
+producer,IND,0.0947,18.071,,,19.63
+producer,KHM,0.1588,11.757,,,11.87
+producer,PAK,0.1031,10.347,,,11.14
+producer,IDN,0.1313,10.049,,,10.48
+consumer,EU,,,259.365,86.455,
+consumer,USA,,,113.715,37.905,
+consumer,JPN,,,33.225,11.075,
+consumer,GBR,,,26.835,8.945,
+consumer,KOR,,,16.605,5.535,

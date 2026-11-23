@@ -1,0 +1,10 @@
+date,event,country,type,deaths,factories_affected,attack_fraction,outcome,use,source
+2005-01-01,End of MFA/ATC quotas,global,policy,,,,"China's exports surged, nearly all other exporters fell",Sim 1/3 validation,"Brambilla, Khandelwal & Schott (2010), NBER (dataset catalog)"
+2005-04,Spectrum garment factory collapse,BGD,collapse,64,1,0.0003,~100 injured,incident list,https://gulfnews.com/world/asia/major-industrial-accidents-in-bangladesh-in-recent-years-1.2052996
+2012-09-11,"Ali Enterprises fire, Karachi",PAK,fire,258,1,,Pakistan's worst industrial disaster (sources give 258-315 deaths),incident list,https://tribune.com.pk/story/781408/entertainment
+2012-11-24,Tazreen Fashions fire,BGD,fire,112,1,0.0003,deadliest factory fire in Bangladesh,Sim 1.5,https://www.ilo.org/resource/chronology-recent-events-bangladesh-ready-made-garment-rmg-sector
+2013-04-24,Rana Plaza collapse,BGD,collapse,1134,5,0.0015,exports still +16% to $23.86bn (Apr 2013-Mar 2014); prices cut ~6%,Sim 1.5 validation,https://www.thedailystar.net/garment-exports-show-resilience-21162
+2023-10-23,Bangladesh garment wage strike,BGD,strike,,600,0.1807,"minimum wage raised to Tk 12,500 (~$113) from 1 Dec 2023",Sim 1 / Sim 3,https://en.wikipedia.org/wiki/2023_Bangladesh_garment_workers_strike
+2023-07 to 2026-06,Factory closures,BGD,closures,,402,0.1211,282 BGMEA + 120 BKMEA factories closed,context,https://www.tbsnews.net/node/1532431
+2026,Foshan textile fire,CHN,fire,,,,on slide 'Our Motivation': add source and numbers,incident list,
+2026-11-01,Bangladesh garment wage strike,BGD,strike,,529,0.1593,"987,190 workers disrupted; demand Tk 30,000 vs Tk 12,500; 65 factories closed indefinitely by 15 Nov",Sim 1 attack size,BGMEA via press (dataset catalog); https://www.usnews.com/news/top-news/articles/2026-10-31/bangladesh-to-form-wage-board-after-garment-protests-shut-factories
